@@ -34,11 +34,6 @@ export class UserController {
         });
     }
 
-    // async updateUser(userID: string, createUserDTO: CreateUserDTO): Promise<User>{
-    //     const user = await this.userModel.findByIdAndUpdate(userID, createUserDTO,{new: true});
-    //     return user;
-    // }
-
     @Put(":userID")
     async updateUser(@Res() res, @Body() userDTO: CreateUserDTO, @Param("userID") userID: string){
         const updatedUser = await this.userService.updateUser(userID, userDTO);
