@@ -39,4 +39,9 @@ export class ProductService {
         const product = await this.productModel.findByIdAndUpdate(productID, createProductDTO,{new: true});
         return product;
     }
+
+    async updateProduct2(productID: string, productt: Product): Promise<Product>{
+        const product = await this.productModel.findByIdAndUpdate(productID, productt,{new: true});        
+        return product;
+    }
 }

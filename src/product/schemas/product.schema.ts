@@ -24,7 +24,8 @@ export const ProductSchema = new Schema ({
     type: String,
     color: String,
     size: Array,
-    foreignExchange: String
+    foreignExchange: String,
+    stock: Number
 });
 
 // imageUrl: string;

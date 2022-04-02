@@ -22,6 +22,7 @@ export interface Product extends Document {
     color: string;
     size: Array<number>;
     foreignExchange: string;
+    stock: number;
 }
 
 // imageUrl: string;

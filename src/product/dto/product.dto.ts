@@ -21,6 +21,7 @@ export interface CreateProductDTO extends Document {
     color: string;
     size: Array<number>;
     foreignExchange: string;
+    stock: number;
 }
 
 //     "color": "Black",
